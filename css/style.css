@@ -1,0 +1,149 @@
+@import url(https://fonts.googleapis.com/css?family=DM+Sans:400,700&display=swap);
+:root {
+  --dark-brown: #382314;
+  --medium-brown: hsl(28, 10%, 53%);
+  --cream: hsl(27, 66%, 92%);
+  --very-pale-orange:hsl(33, 100%, 98%);
+
+  --soft-red: hsl(10, 79%, 65%);
+  --soft-soft-red: rgba(236, 119, 95, 0.5);
+  --cyan: hsl(186, 34%, 60%);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'DM Sans';
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--cream);
+  min-height: 100vh;
+  gap: 50px;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.app-balance {
+  width: 500px;
+  padding: 15px 20px;
+  border-radius: 15px;
+  background-color: var(--soft-red);
+}
+
+.app-balance__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app-balance__content {
+  color: var(--very-pale-orange);
+}
+
+.app-balance__title {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.app-balance__balance {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.app-diagram {
+  width: 500px;
+  padding: 20px 15px;
+  border-radius: 15px;
+  background-color: var(--very-pale-orange);
+}
+
+.app-diagram__title {
+  color: var(--dark-brown);
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.app-diagram__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  min-height: 300px;
+  gap: 10px;
+}
+
+.app-diagram__item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 0 30px;
+  width: 100%;
+}
+
+.app-diagram__column {
+  min-height: 180px;
+  background-color: var(--soft-red);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.25s ease-in;
+}
+
+.app-diagram__column:hover {
+  background-color: var(--soft-soft-red);
+}
+.app-diagram__column.active {
+  background-color: var(--cyan);
+}
+
+.app-diagram__name {
+  font-size: 14px;
+  color: var(--medium-brown);
+  text-align: center;
+}
+
+.app-diagram__info {
+  border-top: 1px solid var(--cream);
+  padding: 20px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app-diagram-balance__title {
+  font-size: 14px;
+  color: var(--medium-brown);
+  margin-bottom: 10px;
+}
+
+.app-diagram-balance__balance {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.app-diagram-balance__balance-last {
+  text-align: right;
+  font-size: 14px;
+  color: var(--medium-brown);
+}
+
+.app-diagram-balance__title-last {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 700;
+}
