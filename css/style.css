@@ -96,8 +96,18 @@ body {
   width: 100%;
 }
 
+.app-diagram__amount {
+  display: none;
+  background-color: var(--dark-brown);
+  padding: 7px 5px;
+  margin: 0 -5px;
+  border-radius: 5px;
+  color: var(--very-pale-orange);
+  font-weight: 700;
+}
+
 .app-diagram__column {
-  min-height: 180px;
+  /* min-height: 180px; */
   background-color: var(--soft-red);
   border-radius: 5px;
   cursor: pointer;
