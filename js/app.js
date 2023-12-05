@@ -3,8 +3,8 @@ const getData =  async() => {
   const data = await response.json();
   return data;
 } 
-const data = getData();
 
+const data = getData();
 
 const diagramList = document.querySelector('.app-diagram__list');
 
